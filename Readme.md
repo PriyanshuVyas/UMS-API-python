@@ -12,7 +12,7 @@ Performs CRUD operation in MongoDB using Python and Flask.
     Returns all the task
 
 
-* GET ***/task/<id>*** -
+* GET ***/task/:id*** -
  
    Returns a single task by its ID.
    
@@ -22,33 +22,34 @@ Performs CRUD operation in MongoDB using Python and Flask.
    Create a new task in the database.
 
    _Request Format:_
-   
+   ```
     {
         "title": "TASK_TITLE",
         "description": "TASK_DESCRIPTION",
         "due date": "TASK_DUE_DATE",
         "status": "Incomplete OR Completed OR In Progress"
     }
+    ```
 
-
-* PUT ***/updatetask/<id>*** -
+* PUT ***/updatetask/:id*** -
 
    Update a task using its ID.
    
    _Request Format:_
-   
+   ```
     {
         "title": "UPDATED_TASK_TITLE",
         "description": "UPDATED_TASK_DESCRIPTION",
         "due date": "UPDATED_TASK_DUE_DATE",
         "status": "Incomplete OR Completed OR In Progress"
     }
+    ```
 
-
-* DELETE ***/deletetask/<id>*** -
+* DELETE ***/deletetask/:id*** -
 
    Delete a task using its ID.
    
+
 
 ### Follow the steps to use this on your machine:
 
@@ -71,7 +72,9 @@ pip install pymongo
 ## Start the server:
 
 Run main.py
+
 The default port is 5000.
+
 The server will start running on http://localhost:5000.
 
 ## Configuration
